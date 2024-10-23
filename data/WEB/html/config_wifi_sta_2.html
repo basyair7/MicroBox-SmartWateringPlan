@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="basyair7">
+    <link rel="stylesheet" href="../css/config_wifi_sta.css">
+    <link rel="stylesheet" href="/css/config_wifi_sta.css">
+    <script src="../js/sweetalert.min.js"></script>
+    <script src="/js/sweetalert.min.js"></script>
+
+    <script type="text/javascript">
+        function validateForm() {
+            let password = document.getElementById("newpasswordsta");
+            let ssidsta  = document.getElementById("newssidsta");
+            if (ssidsta.value.trim() === "") {
+                swal.fire({
+                    icon: "warning",
+                    title: "Information",
+                    text: "New SSID STA cannot be empty."
+                });
+                
+                return false;
+            }
+
+            if (password.value.trim() === "" || password.value.length < 8) {
+                swal.fire({
+                    icon: "warning",
+                    title: "Information",
+                    text: "Password must be at least 8 characters long."
+                });
+
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+    <title>WiFi Configuration - MicroBOX (Smart Watering Plant) %VERSIONPROJECT%</title>
+</head>
+<body>
+    
+</body>
+</html>
