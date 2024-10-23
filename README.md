@@ -8,4 +8,4 @@ Project Penyiraman Tanaman Hias Otomatis berbasis IoT
 ## Version
 - VERSION PROJECT : 1.0
 - HW VERSION	  : 1.0.0
-- SW VERSION	  : 1.0.1
+- SW VERSION	  : 1.0.0
